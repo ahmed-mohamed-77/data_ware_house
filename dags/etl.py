@@ -67,7 +67,7 @@ with DAG(
     @task()
     def load_weather_data(transformed_data):
         """Load transformed data into postgres"""
-        pg_hook = PostgresHook(postgres_string_url)
+        pg_hook = PostgresHook("postgres_default")
         conn=pg_hook.get_conn()
         cursor = conn.cursor()
         
