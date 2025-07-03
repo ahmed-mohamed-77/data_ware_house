@@ -1,0 +1,2 @@
+{"timestamp":"2025-06-29T17:22:51.691869","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-29T17:25:55.094469","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py","logger":"airflow.models.dagbag.DagBag"}

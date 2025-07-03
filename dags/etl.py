@@ -11,6 +11,23 @@ from datetime import datetime
 load_dotenv("data_ware_house\.env", override=True)
 postgres_string_url = os.getenv("AIRFLOW__DATABASE__SQL_ALCHEMY_CONN")
 
+"""the DAG (Directed Acyclic Graph)
+------------------------------------------------------
+A Dag is a collection of all the tasks you want to run, organized in a way that reflect their
+dependencies.
+it helps you defines the structure of your entire workflow, showing which tasks needs to happen before others
+
+CONCEPT 2: Operator
+an operator defines a single, ideally idempotent, task in your dag
+
+CONCEPT 3: Task / Task Instance
+A task is a specific instance of an operator. when an operator is assigned to a dag, it becomes a task
+Tasks are the actual units of work that get executed when your dag runs
+
+CONCEPT 4: Workflow
+A workflow is the entire process defined by your DAG, including all tasks and their dependencies
+
+"""
 
 # latidute and longtude
 LAT="51.5074"
